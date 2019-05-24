@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "name": "Items API",
+    "alias": "items-api.now.sh",
+    "builds": [
+        {
+            "src": "dist/main.js",
+            "use": "@now/node-server"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "dist/main.js"
+        }
+    ]
+}
