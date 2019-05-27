@@ -34,11 +34,6 @@ export class ScrollsService {
             name: 'Oblivion',
             releaseYear: 2006,
         },
-        {
-            id: '563',
-            name: 'Skyrim',
-            releaseYear: 2011,
-        },
     ];
 
     findAll(): Scrolls[] {
