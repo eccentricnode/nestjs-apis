@@ -9,10 +9,11 @@ import { OsListService } from './os-list/os-list.service';
 import { OsListModule } from './os-list/os-list.module';
 import { ScrollsController } from './scrolls/scrolls.controller';
 import { ScrollsModule } from './scrolls/scrolls.module';
+import { ScrollsService } from './scrolls/scrolls.service';
 
 @Module({
   imports: [ItemsModule, OsListModule, ScrollsModule],
   controllers: [AppController, ItemsController, OsListController, ScrollsController],
-  providers: [AppService, ItemsService, OsListService],
+  providers: [AppService, ItemsService, OsListService, ScrollsService],
 })
 export class AppModule {}
